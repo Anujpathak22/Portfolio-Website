@@ -1,0 +1,94 @@
+post1.html<!DOCTYPE html>
+<html>
+<head>
+	<!-- <title>hackernews</title> -->
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/emailer.png">
+		</div>
+		
+		<h3> Hacker News Headlines Emailer </h3>
+		<p>
+		   This tool is very helpful to send emails automatically from any website.
+		</p>
+
+		<h3> How I built it</h3>
+		<p>
+			1.This python Automation tool helps to extract the content of the given website with the help of packages requests.
+		</p>
+
+        <p>  2.After the process of extraction the library called BeautifulSoup4 is used to scrap the content of the Website, content like link/domain, etc.
+        </p>
+
+        <p>  3.Then set up of Email-Authentication is used with the help of python package Smtplib library Authentication system
+        </p>
+
+        <p> 4.After setting up the Email-Authentication system we are now able to create the body of the email and any other information which is needed to sent email to others
+        5.Finally Boom Email sent !
+        </p>
+    
+       
+
+		<!-- h<h5> : </h5> -->
+
+		<h5> Tools Used :</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- BeautifulSoup</li>
+			<li>- Smtlib </li>
+			<li>- requests </li>
+			<!-- <li>- datetime module</li> -->
+		
+		</ul>
+
+		<p> source code:
+		<a target="_blank" href="https://github.com/Anujpathak22/Python-Automation-tool-to-Sent-Email-using-Web-Scrapping">Anujpathak22</a>
+		</p>
+
+	</div>
+
+</body>
+</html>

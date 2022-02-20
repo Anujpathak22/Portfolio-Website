@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <title>hackernews</title> -->
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+	
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<!-- <div class="img-container">
+			<img src="images/Screenshot 1.png">
+		</div> -->
+		
+		<h3> FLIGHT PRICE PREDICTION PROJECT </h3>
+		<h5>Project Objective</h5>
+        <p>The dataset contains 25 features with 4287 records. The dataset is about the prices of the flights for various airlines based on some features and conditions. Nowadays, it is difficult to predict the optimal time to buy the ticket with a minimum price since prices change dynamically due to different conditions. As a result of that, we use machine learning to fix the problem to help customers predict the optimal time to buy a ticket with minimum price</p>
+        <h5>Data Attributes</h5>
+        <p>Out_Date, Out_Day, Out_Weekday, Out_Month, out_Year: The date when the journey starts from the source.</p>
+        <p>Out_Time: The time when the journey starts from the source</p>
+        <p>Out_Cities: The city at which the journey starts from the source</p>
+        <p>Out_Airline: The name of the airline when the journey travels only to the destination</p>
+        <p>Return_Date, Return_Day, Return_Weekday, Return_Month, Return_Year: The date when someone travels back to its source</p>
+        <p>Return_Time: The time when the journey travels back the source</p>
+        <p>Return_Cities: The city at which the journey travels back to the source</p>
+        <p>Return_Airline: The name of the airline when the journey travels back to the sources</p>
+        <p>Out_Travel_Time: Total duration of the flight to travel only to the destination</p>
+        <p>Return_Travel_Time: Total duration of the flight to travel back to the source</p> 
+        <p>Out_Journey_Type The type of the journey during travelling to the destination. It could be direct or connecting</p>
+        <p>Return_Journey_Type: The type of the journey during travelling back to the source. It could be direct connecting</p>
+        <p>Out_Stop_Cities: The number of intermediate stops of the journey during travelling to the destination</p>
+        <p>Return_Stop_Cities: The number of intermediate stops of the journey during travelling to the source</p>
+        <p>Price: The price of the ticket</p>
+        <p>timestamp: The date and time for webscarpping the information from the website</p>
+        <p>sort: sorting based on the quality of the flight journey.</p>
+
+        
+        <h5>Task:</h5>
+        <p>The application is simple flight price prediction which uses a ML trained model to predict the optimal time to buy a ticket with minimum price by using such prediction a customer can buy the minimum priced ticket within optimal time</p>
+        
+        <h5>Exploratory Data Analysis and Feature Extraction:</h5>
+        <p>We started with reading the dataset and using basic code to visualise the columns, its data types.</p>
+
+        <p>1.Data Selection.</p>
+        <p>2.Data Pre-processing.</p>
+        <p>3.Data Visualization.</p>
+        <p>4.Transform data (scale, normalize the data, dimensionality reduction)></p>
+        <p>5.Data Sampling</p>
+
+        <h5>Modelling</h5>
+        <p>In Project, we used Linear Regression method from sklearn linear model and Random Forest as first and second algorithm respectively to train our data set</p>
+        <p></p>
+
+        <h5>Implementation</h5>
+        <p>We tried to predict the model accuracy with the help of two models - Linear Regression and Random Forest</p> 
+        <h5>Linear Regression</h5>
+        <p>You’re probably familiar with plotting line graphs with one X axis and one Y axis. The X variable is sometimes called the independent variable and the Y variable is called the dependent variable. Simple linear regression plots one independent variable X against one dependent variable Y. Technically, in regression analysis, the independent variable is usually called the predictor variable and the dependent variable is called the criterion variable. However, many people just call them the independent and dependent variables. More advanced regression techniques (like multiple regression) use multiple independent variables.</p>  
+         
+        <h5>Random Forest</h5>
+        <p>Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. Random forests generally outperform decision trees, but their accuracy is lower than gradient boosted trees</p> 
+        
+        <h5>Deployment</h5>  
+        <p>Model using Linear Regression and RandomForest: Deployment through Python Flask</p> 
+        <h5>Description of the web application</h5>
+        <p>The web application uses simple techniques for its implementation.</p><p>HTML & CSS for the frontend part.</p> 
+        <p>Flask is used for backend part.</p>
+
+        <h5>Workflow of the project</h5>
+
+
+        <p>STEP 1: We have done necessary imports of the library that we need to implement our logic.</p>
+        <p>STEP 2: After that we read the pickled file.</p>
+        <p>STEP 3: The user inputs necessary data into the form like structure and once click the submit button the result is displayed on the screen itself</p>
+    
+
+
+        
+		<h5>Tools and Library used:</h5>
+		<ul>
+			<li>- SuperVised Machine learning </li>
+			<li>- Python</li>
+			<li>- Ml</li>
+			<li>- Scikit Learn </li>
+			<li>- Linear Regression </li>
+            <li>- RandomForest Regressor </li>
+			<li>- pandas </li>
+            <li>- seaborn </li>
+			<li>- Numpy </li>
+			<li>- matplotlib </li>
+			
+		</ul>
+
+
+    <h5>Screenshot of the project </h5>
+
+    <img src="images/flight.png">
+
+    <h5>Deployment Link for Model</h5>
+    <a target="_blank" href="https://flight-optimal-time-price.herokuapp.com/"> click here
+    </a>
+
+
+
+</div>
+
+</body>
+</html>
